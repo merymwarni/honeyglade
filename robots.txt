@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
-
+Disallow: /api/
+Disallow: /__nuxt_error
 Sitemap: https://honeyglade.my.id/sitemap.xml
