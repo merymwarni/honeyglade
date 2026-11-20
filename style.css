@@ -8218,6 +8218,7 @@ main {
 }
 
 
+
 /* ==========================================
    NARRATIVE TEXT - VIDEO LEARNING
 ========================================== */
@@ -8258,23 +8259,27 @@ main {
     margin: 0 auto;
 }
 
+/* VIDEO WRAPPER */
+
 .narrative-video-wrapper {
-    position: relative;
     width: 100%;
-    aspect-ratio: 16 / 9;
+    max-width: 900px;
+    margin: 0 auto;
     overflow: hidden;
     border-radius: 15px;
-    background: #F3E4C5;
+    background: transparent;
 }
 
-.narrative-video-wrapper iframe {
-    position: absolute;
+.narrative-video-wrapper video {
+    display: block;
     width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
+    height: auto;
     border: none;
+    border-radius: 15px;
+    object-fit: contain;
 }
+
+/* VIDEO NOTE */
 
 .narrative-video-note {
     display: flex;
@@ -8301,6 +8306,8 @@ main {
     color: #72583B;
 }
 
+/* RESPONSIVE */
+
 @media screen and (max-width: 768px) {
     .narrative-video-card {
         padding: 18px 14px;
@@ -8314,6 +8321,7 @@ main {
         font-size: 13px;
     }
 }
+
 
 
 /* ==========================================
